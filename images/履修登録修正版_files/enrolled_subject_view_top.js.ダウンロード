@@ -1,0 +1,18 @@
+function goPrint(){
+    alert('印刷方向を「横」にして印刷してください。');
+    parent.print_view.focus();
+    parent.print_view.print();
+}
+
+function goResult(){
+    d('value(menu)').value='decisionOfSubjectView';
+    document.StudyActionForm.submit();
+}
+
+function d(id){
+        if(navigator.appName == 'Microsoft Internet Explorer')
+            return document.all(id);
+        else
+            return document.getElementById(id)==null?
+                    document.getElementsByName(id)[0]:document.getElementById(id);
+}

@@ -1,0 +1,377 @@
+@charset "UTF-8";
+
+/*
+ *   STYLESHEET: Core module
+ *   (Cascading Style Sheets, Level 2)
+ *
+ *   Copyright (C) 2004 M,Sakaki, All rights reserved.
+ */
+
+/* ---------- Heading ---------- */
+h1
+	{
+		color: #FFFFFF;
+		background-color: #006699;
+		font-size: 180%;
+		text-align: left;
+		padding: 0.5em;
+	}
+
+h2	{
+		color: #92908D;
+		text-align: center;
+		font-size: 140%;
+}
+h3
+	{
+		font-size: 140%;
+		font-weight: bold;
+		margin: 1.5em 0 0.5em 0;
+		padding: 0 0 0.1em 0;
+		border-color: #800000;
+		border-width: medium;
+		border-style: none none solid none;
+	}
+
+h4
+	{
+		color: #000000;
+		background-color: #FFD3D3;
+		font-size: 100%;
+		font-weight: bold;
+		margin: 1em 0 0.5em 0;
+		padding: 0.2em 0.2em 0.2em 1.5em;
+	}
+
+h5
+	{
+		font-size: 100%;
+		margin: 1em 0 0.5em 0;
+		padding: 0.1em 0.1em 0.1em 3em;
+		border-color: #800000;
+		border-width: thin;
+		border-style: none none dashed none;
+	}
+
+h6
+	{
+		font-size: 100%;
+		margin: 1em 0 0.5em 5em;
+		padding: 0;
+	}
+
+/* ---------- Text ---------- */
+p
+	{
+		margin: 1em 0;
+		padding: 0;
+	}
+
+blockquote
+	{
+		color: #000000;
+		background-color: #FFF3F3;
+		margin: 1em 0;
+		padding: 0.5em;
+		border-color: #FFBB77;
+		border-width: medium;
+		border-style: double;
+	}
+
+blockquote:before
+	{
+		color: #888888;
+		background-color: Transparent;
+		content: "[Quote] " attr(title);
+		display: block;
+	}
+
+blockquote:after
+	{
+		color: #888888;
+		background-color: Transparent;
+		text-align: right;
+		content: attr(cite) " [Quote]";
+		display: block;
+	}
+
+q
+	{
+		color: #FFBB77;
+		background-color: Transparent;
+		quotes: """" "?u""?v";
+	}
+
+q:before
+	{
+		content: open-quote;
+	}
+
+q:after
+	{
+		content: close-quote;
+	}
+
+ins
+	{
+		text-decoration: underline;
+	}
+
+del
+	{
+		text-decoration: line-through;
+	}
+
+pre
+	{
+		color: #000000;
+		background-color: #EFEFEF;
+		margin: 1em 0;
+		padding: 0.5em 1em;
+		border-color: #888888;
+		border-width: thin;
+		border-style: solid;
+	}
+
+cite
+	{
+		margin: 0 0.2em;
+		padding: 0;
+		border-color: #CC9999;
+		border-width: medium;
+		border-style: none none double none;
+	}
+
+em
+	{
+		font-weight: bold;
+		margin: 0 0.2em;
+		padding: 0;
+		border-color: #0000FF;
+		border-width: medium;
+		border-style: none none dotted none;
+	}
+
+strong
+	{
+		color: #FF0000;
+		background-color: Transparent;
+		font-weight: bold;
+		margin: 0 0.2em;
+		padding: 0;
+		border-color: #0000FF;
+		border-width: medium;
+		border-style: none none dotted none;
+	}
+
+abbr
+	{
+		border-color: #A05050;
+		border-width: thin;
+		border-style: none none dotted none;
+		cursor: help;
+	}
+
+acronym
+	{
+		border-color: #A05050;
+		border-width: thin;
+		border-style: none none dotted none;
+		cursor: help;
+	}
+
+dfn
+	{
+		border-color: #A05050;
+		border-width: thin;
+		border-style: none none dotted none;
+	}
+
+code
+	{
+		color: #000000;
+		background-color: #EFEFEF;
+		font-family: monospace;
+		font-size: 90%;
+	}
+
+var
+	{
+		color: #000000;
+		background-color: #EFEFEF;
+		font-family: monospace;
+		font-size: 90%;
+		font-style: italic;
+	}
+
+samp
+	{
+		color: #000000;
+		background-color: #EFEFEF;
+		font-family: monospace;
+		font-size: 90%;
+	}
+
+kbd
+	{
+		color: #000000;
+		background-color: #EFEFEF;
+		font-family: monospace;
+		font-size: 90%;
+		margin: 0 0.2em;
+		padding: 0.1em;
+		border-color: #999999;
+		border-width: thin medium medium thin;
+		border-style: solid;
+	}
+
+rt,
+rp
+	{
+		font-size: 60%;
+	}
+
+h1 rt,
+h1 rp,
+h2 rt,
+h2 rp,
+h3 rt,
+h3 rp,
+h4 rt,
+h4 rp
+	{
+		font-size: 40%;
+	}
+
+sup
+	{
+		vertical-align: super;
+	}
+
+sub
+	{
+		vertical-align: sub;
+	}
+
+address
+	{
+		font-style: normal;
+		font-size: 10pt;
+		text-align: center;
+	}
+
+span
+	{
+		color: #000000;
+		font-size: 10pt;
+	}
+
+/* ---------- List ---------- */
+ul,
+ol
+	{
+		margin: 1em 0;
+		padding: 0;
+	}
+
+li ul,
+li ol
+	{
+		margin: 0;
+		padding: 0;
+	}
+
+li
+	{
+		margin: 0 2em;
+		padding: 0;
+	}
+
+dd li
+	{
+		margin: 0 1.5em;
+		padding: 0;
+	}
+
+dl
+	{
+		margin: 1em 0;
+		padding: 0;
+	}
+
+dt
+	{
+		color: #000000;
+		background-color: #FAFAFA;
+		margin: 0.5em 0 0 0;
+		padding: 0 0.2em;
+		border-color: #CCCCCC;
+		border-width: thin 0;
+		border-style: solid none;
+	}
+
+dd
+	{
+		margin: 0.1em 0 0.1em 1em;
+		padding: 0;
+	}
+
+/* ---------- Image and Object ---------- */
+img
+	{
+		border: none;
+	}
+
+/* ---------- Horizontal Rule ---------- */
+hr
+	{
+		border-color: #003355;
+		border-width: thin;
+		border-style: solid none none none;
+		width:100%;/* k.ishikawa 090617 add multi browser*/
+	}
+
+/* ---------- Anchor ---------- */
+a:link	{
+		font-size: 10pt;
+		background-color: Transparent;
+		text-decoration: underline;
+}
+a:visited	{
+		font-size: 10pt;
+		background-color: Transparent;
+		text-decoration: underline;
+}
+a:hover	{
+		color: #FF0000;
+		font-size: 10pt;
+		background-color: Transparent;
+		text-decoration: underline;
+}
+a:active	{
+		color: #ff0000;
+		font-size: 10pt;
+		background-color: Transparent;
+		text-decoration: underline;
+}
+
+/* ---------- Form ---------- */
+fieldset
+	{
+		padding: 0.5em 1em;
+	}
+
+input
+	{
+		vertical-align: middle;
+	}
+
+.btn1 { width: 240; height: 60; text-align: center; border-width: 0; }
+.dat1{ background-color: afafaf; font-weight: bold;}
+.font1{ color:white; margin-top: -20pt; }
+.font2{ margin-top :-20pt; }
+.font3{ margin-top :-20pt; color: #ffffff; }
+
+.text-view { height: 25; line-height: 1.5;}
+.data1{ width:60; } 
+.button1{ border-width: 0; } 

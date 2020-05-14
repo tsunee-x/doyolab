@@ -1,0 +1,53 @@
+
+<!-- saved from url=(0132)https://ku-web.kanagawa-u.ac.jp/study_student/StudyAction.do?value(menu)=enrolledSubjectViewSearch&value(type)=1&value(saved_flag)=1 -->
+<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="./style_student.css">
+    <link rel="stylesheet" type="text/css" href="./style_body_student.css">
+    <link rel="stylesheet" type="text/css" href="./style_table_student.css">
+	<script language="javascript" src="./enrolled_subject_view_top.js.ダウンロード"></script>
+	<script language="javascript">
+		function goMenu(){
+		    top.location.href="/study_student/pages/student/student_menu.jsp";
+		}
+
+		function goPrintPdf(){
+		    next = '../slit/riRegConfr.do?actionID=riRegConfr&register=201802153&studentFlg=1';
+		    var status = "width=1014,Height=692,scrollbars=no,left=0,top=0,screenx=0,screeny=0,status=yes";
+		    window.open(next,"sub",status);
+		}
+	</script>
+</head>
+<body topmargin="0" leftmargin="0" oncontextmenu="return false;">
+
+    <center>
+    <form name="StudyActionForm" method="post" action="https://ku-web.kanagawa-u.ac.jp/study_student/StudyAction.do" target="_top">
+    <input type="hidden" name="value(menu)" value="enrolledSubjectViewSearch">
+    <input type="hidden" name="value(type)" value="1">
+    <input type="hidden" name="value(result_opening_flag)" value="1">
+    <input type="hidden" name="value(result_opening_id)" value="01">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody><tr bgcolor="#3366CC">
+            <td height="40" valign="top" width="100%">
+                <img src="./student_enrolled_header.png" width="998" height="40" alt="履修情報参照" style="position:absolute;z-index:1;">
+                <img align="left" src="./btnStudyMenu.png" onclick="goMenu();" alt="履修メニューへ" style="cursor:pointer;position:absolute;top:7px;left:900px;z-index:33;">
+            </td>
+        </tr>
+    </tbody></table>
+    <p>
+    <table width="960" border="0" cellpadding="2" cellspacing="0">
+        <tbody><tr>
+		
+			<th class="font_red" align="center">
+				登録が完了しました。画面の印刷を必ず実施してください。
+		
+		
+			</th>
+			<th width="80" align="right">
+				<img src="./btnPrint.png" onclick="goPrint()" style="cursor:pointer;" alt="印刷">
+			</th>
+		</tr>
+	</tbody></table>
+	</p></form>
+	</center>
+
+</body></html>

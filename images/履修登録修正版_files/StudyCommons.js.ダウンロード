@@ -1,0 +1,54 @@
+/**
+ * 汎用遷移処理<p>
+ *
+ */
+function fncSubmit(form, target, action){
+	//※必ずvalue(menu)が必要となる。
+	document.all("value(menu)").value = action;
+	document.all(form).target = target;
+	document.all(form).submit();
+}
+
+/**
+ * 履修管理メニュー遷移<p>
+ *
+ */
+function fncGoStudySubjectMenu(form, target) {
+	//※必ずvalue(menu)、value(type)が必要となる。
+	document.all("value(menu)").value = "studyMenuInit";
+	fncSubmit(form, target, "transfer");
+}
+
+/**
+ * 履修制限科目メニュー遷移<p>
+ *
+ */
+function fncGoLimitSubjectMenu() {
+	top.location.href="/study/pages/limit_subject_index.jsp";
+}
+
+/**
+ * キーボード操作によるヒストリー移動を抑止
+ *
+ * @param _Event
+ */
+function blockHistoryBackByKey(_Event){
+	//セッション正常フラグの試験を行いたい場合はこのメソッドの内容をコメントアウト。
+	//メソッドそのものをコメントアウトすると勿論エラーとなる。
+	//Altキー
+    if(_Event.keyCode == 18){
+        _Event.returnValue = false;
+    }
+	//←キー
+    if(_Event.keyCode == 37){
+        _Event.returnValue = false;
+    }
+	//→キー
+    if(_Event.keyCode == 39){
+        _Event.returnValue = false;
+    }
+	//BackSpaceキー
+    if(_Event.keyCode == 8){
+        _Event.returnValue = false;
+    }
+}

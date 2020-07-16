@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="jp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>study10</title>
+    
+    <link rel="stylesheet" href="main.css">
+</head>
+
+
+<body>
+    <!--ホームに帰るためのボタン-->
+    <logotohome>
+    <a href="index.html"><img src="images/logo.png" alt=""></a>
+    </logotohome>
+
+    <!--h1は見出し１（大見出し）-->
+    <h1><span style="color:coral">IoT制作への挑戦</span> </h1><br>
+            <!--h3は見出し3（小見出し）-->
+            <!--pは段落-->
+      <h3><span style="color: aqua">~M5StackとTwitterをつなげる~</span></h3><br>           
+    マイコンをインターネット上のアプリとつなげるサイトがいくつか存在します。私が今回紹介するのはThing SpeakというサイトのThingTweetというサービスです。この、ThingTweetではマイコンからの動作をTwitterに反映？してくれるものです！サインアップして自分のTwitterアカウントのAPI keyを取得すれば簡単にTwitterと繋がれます。<br>
+    <a href="https://thingspeak.com/">サイトにアクセス</a><br>
+    <p>
+    <h3>【API key取得手順】<br>
+    ①サイト右上の3本線のバーからsign upを選択<br>
+    ②Create one!を選択しメールアドレスとパスワードを設定その後メールでお知らせが来たような...（笑）<br>
+    <img src="images/speakthing.png" width="70%"><br>
+    ③上のツールバーの所からAppのThingTweetを選択<br>
+    <img src="images/speakthing3.png" width="70%"><br>
+    ④API keyを生成を選択し、自分のTwitterアカウントを登録<br>
+    <img src="images/speakthing4.png" width="70%"><br>
+    <p>
+        コードはこちらの方から取得しました！
+        <a href="https://github.com/lukasmaximus89/M5StackTweet">
+            コード例</a></h3>
+    <h3>ほかにもIFTTTとかでもたくさん試してみたのでまた今度載せまーす！</h3><br>
+    <h3>【m5Stack以外にも試したこと】</h3><br>
+     この前購入したESP32wroom-02をインターネットにつないでみる！ボタンを押すとHTMLが送れるようにしました。これはその一部。※スペルミスは気にしないで...（笑）<br>
+     <img src="images/esp.png" width="40%"><br>
+     <img src="images/espwroom02.png" width="50%"><br>
+    
+    <h3>【M5Stackとセンサー】</h3><br>
+    超音波距離センサーモジュールを使ってセンサーが物体の距離を認知するシステムを体験してみました！今回のIoTはこのTwitter機能と超音波距離センサーモジュールを組み合わせたものを作っていこうかなと思います！<br>
+    <video src="images/distace.mp4" controls width="20%"><br>
+     
+<p>
+  
+    
+                
+
+</body>
